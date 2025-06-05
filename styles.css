@@ -15,6 +15,7 @@ h1 {
     margin:0 auto;
     justify-content: center;
     gap: 25px;
+    height: 60vh;
 }
 
 #nav-bar button {
@@ -31,7 +32,7 @@ h1 {
 #movie-form {
     display: none;
     flex-direction: column;
-    width: 400px;
+    width: 45%;
     margin: 20px auto;
     background-color: #537D5D;
     padding: 20px;
@@ -90,7 +91,7 @@ form button {
     border-radius: 5px;
     box-shadow: 0 0 3px 3px rgba(224, 210, 3, 0.6);
     position: relative;
-    width: 420px;
+    width: 45%;
 }
 
 .book h3,

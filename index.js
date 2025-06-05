@@ -313,5 +313,6 @@ document.querySelectorAll("button").forEach(button => {
     let navFlip = document.querySelector("#nav-bar");
     navFlip.style.flexDirection = "row";
     navFlip.style.width = "75%";
+    navFlip.style.height = "auto";
 }, { once: true });
 });
