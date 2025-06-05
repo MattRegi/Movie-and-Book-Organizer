@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies & Books Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Movies & Books<br>Organizer!</h1>
+    <div id="nav-bar">
+        <button onclick="bookFormDisplay()">Add Book</button>
+        <button onclick="movieFormDisplay()">Add Movie</button>
+        <button onclick="displayBooks()">View Book List</button>
+        <button onclick="displayMovies()">View Movie List</button>
+    </div>
+
+<!-- Book Form -->
+    <form id="book-form">
+        <label for="book-title">Title:</label>
+        <input type="text" id="book-title" name="title" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="book-author" name="author" required>
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="book-description" required></textarea>
+
+        <label for="status">Status:</label>
+        <select name="status" id="book-status" required>
+            <option value="" disabled selected>Select Status</option>
+            <option value="read">Read</option>
+            <option value="reading">Reading</option>
+            <option value="to-be-read">To Be Read</option>
+        </select>
+
+        <button type="submit">Add Book</button>
+    </form>
+<!-- Movie Form -->
+    <form id="movie-form">
+        <label for="title">Title:</label>
+        <input type="text" id="movie-title" name="title" required>
+    
+        <label for="author">Director:</label>
+        <input type="text" id="movie-director" name="director" required>
+    
+        <label for="description">Description:</label>
+        <textarea name="description" id="movie-description" required></textarea>
+    
+        <label for="status">Status:</label>
+        <select name="status" id="movie-status" required>
+            <option value="" disabled selected>Select Status</option>
+            <option value="watched">Watched</option>
+            <option value="to-be-watched">To Be Watched</option>
+            <option value="wishlist">Wishlist</option>
+        </select>
+    
+        <button type="submit">Add Movie</button>
+    </form>
+
+    <div id="book-list"></div>
+    <div id="movie-list"></div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
